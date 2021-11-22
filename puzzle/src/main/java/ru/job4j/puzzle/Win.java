@@ -12,10 +12,10 @@ public class Win {
         return rsl;
     }
 
-    public static boolean vertical(int[][] array, int column) {
+    public static boolean vertical(int[][] board, int column) {
         boolean rsl = true;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i][column] != 1) {
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][column] != 1) {
                 rsl = false;
                 break;
             }
@@ -23,10 +23,10 @@ public class Win {
         return rsl;
     }
 
-    public static boolean horizontal(int[][] array, int row) {
+    public static boolean horizontal(int[][] board, int row) {
         boolean rsl = true;
-        for (int i = 0; i < array.length; i++) {
-           if (array[row][i] != 1) {
+        for (int i = 0; i < board.length; i++) {
+           if (board[row][i] != 1) {
                rsl = false;
                break;
            }

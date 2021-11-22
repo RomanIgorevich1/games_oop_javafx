@@ -6,6 +6,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 
+@SuppressWarnings("ALL")
 public class WinTest {
     @Test
     public void whenVerticalWin() {
