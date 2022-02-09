@@ -21,7 +21,7 @@ public class BishopBlackTest {
         assertThat(figure.copy(dest).position(), is(dest));
     }
 
-    @Test(expected = ImpossibleMoveException.class)
+    @Test
     public void whenWayOfMoving() {
         BishopBlack figure = new BishopBlack(Cell.C1);
         Cell[] rsl = new Cell[] {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
